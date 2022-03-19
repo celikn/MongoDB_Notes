@@ -1,5 +1,3 @@
-# MongoDB_Notes
-
 
 <h4> MongoDB Notes </h4>
 
@@ -73,3 +71,7 @@ db.Restaurants.find( {
    } 
 } ).count()
 ```
+
+More Reading
+- https://www.mongodb.com/developer/how-to/mongodb-geospatial-queries-csharp/
+
