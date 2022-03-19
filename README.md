@@ -72,6 +72,26 @@ db.Restaurants.find( {
 } ).count()
 ```
 
+
+####Importing geojson with mongo-database-tools
+
+- download sample data
+
+```
+ wget https://datahub.io/core/geo-countries/r/0.geojson -O countries.json
+```
+
+before export modify the file as it contains only array of features
+
+```
+mongoimport --uri mongodb://localhost:27017 --db test --collection countries --drop --file countries_sub_p.json --jsonArray
+```
+
+
+
 More Reading
 - https://www.mongodb.com/developer/how-to/mongodb-geospatial-queries-csharp/
+
+
+
 
